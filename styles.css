@@ -1,82 +1,93 @@
 @font-face {
-    font-family: "Figtree";
-    src: url("assets/fonts/static/Figtree-SemiBold.ttf");
-    font-style: normal;
+  font-family: "Figtree";
+  src: url("assets/fonts/static/Figtree-SemiBold.ttf");
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Figtree";
-    src: url("assets/fonts/static/Figtree-ExtraBold.ttf");
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Figtree";
+  src: url("assets/fonts/static/Figtree-ExtraBold.ttf");
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
-    --yellow-custom: hsl(47, 88%, 63%);
-    --gray-500: hsl(0, 0%, 42%);
-    --gray-950: hsl(0, 0%, 7%);
+  --yellow-custom: hsl(47, 88%, 63%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--yellow-custom);
-    margin: 0;
-    height: 100vh;
-    font-family: "Figtree";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow-custom);
+  margin: 0;
+  height: 100vh;
+  font-family: "Figtree";
+}
+
+p,
+h1 {
+  all: unset;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.3em;
-    background-color: white;
-    padding: 1.2em 1.2em 1.2em 1.2em;
-    width: 20rem;
-    color: var(--gray-950);
-    border-radius: 20px;
-    box-shadow: 10px 10px;
-    border-style: solid;
-    border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  background-color: white;
+  padding: 1.2em 1.2em 1.2em 1.2em;
+  width: 20rem;
+  color: var(--gray-950);
+  border-radius: 20px;
+  box-shadow: 10px 10px;
+  border-style: solid;
+  border-width: 1px;
 }
 
-.container img {
-    border-radius: 12px;
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+header img {
+  border-radius: 12px;
 }
 
 .blog-tag {
-    background-color: var(--yellow-custom);
-    font-weight: bold;
-    align-self: flex-start;
-    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
-    border-radius: 5px;
+  background-color: var(--yellow-custom);
+  font-weight: bold;
+  align-self: flex-start;
+  padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+  border-radius: 5px;
 }
 
 .publish-date {
-    font-size: 0.87rem;
+  font-size: 0.87rem;
 }
 
 .blog-title {
-    font-weight: bold;
-    font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .blog-title:hover {
-    color: var(--yellow-custom);
-    cursor: pointer;
+  color: var(--yellow-custom);
+  cursor: pointer;
 }
 
 .blog-desc {
-    color: var(--gray-500);
-    line-height: 1.5;
+  color: var(--gray-500);
+  line-height: 1.5;
 }
 
 .blog-author {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: bold;
 }
 
 .blog-author img {
-    width: 12%;
+  width: 12%;
 }
